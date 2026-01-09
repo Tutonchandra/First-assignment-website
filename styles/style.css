@@ -74,7 +74,7 @@ nav .menu a{
     display: inline-block;
 }
 #background-image{
-    background-image: url(/assets/hero-bg.png);
+    background-image: url(../First-assignment-website/assets/hero-bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
