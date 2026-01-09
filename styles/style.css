@@ -16,6 +16,7 @@
     height:120px ;
 }
 nav{
+    max-width: 1600px;
     margin: 0 auto;
     padding: 16px 120px;
     display: flex;
@@ -56,9 +57,10 @@ nav .menu a{
 
 .hero-container {
     margin: 0 auto;
-    width: 85%;
+    max-width: 1600px;
     height: 675px;
     text-align: center;
+    align-content: center;
     padding: 70px 120px 130px;
     max-width: 1360px;
 
@@ -77,11 +79,6 @@ nav .menu a{
     background-position: center;
     background-size:cover;
 }
-.hero-container h1{
-    font-size: 85px;
-    color: #ffff;
-    
-}
 
 .hero-container p{
     font-size: 16px;
@@ -89,7 +86,21 @@ nav .menu a{
     line-height: 24px;
     margin-bottom: 32px;
 }
-.highlighted-color{
+.main-section h1 {
+    width: 770px;
+    
+    font-size: 72px;
+    height: auto;
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    font-weight: 700px;
+    margin:0 auto;
+    
+
+    color:#ffff;
+}
+.main-section .highlighted-color-2{
     color: #469165;
 }
 
@@ -98,9 +109,10 @@ nav .menu a{
 .section-heading{
     margin: 0 auto;
     height: 500px;
-    width: 85%;
-    padding:0 120px ;
-    align-items: center;
+    max-width: 1600px;
+    padding:120px ;
+    /* align-items: center; */
+    align-content: center;
     text-align: center;
     
 }
@@ -139,6 +151,7 @@ nav .menu a{
     height: 300px;;
     margin: 5px;
     padding: 24px;
+    gap: 16px;
     align-items: center;
     text-align: center;
     background-color: #ffff;
@@ -152,7 +165,7 @@ nav .menu a{
     background-color: #F95555;
     border-radius: 100px;
 }
-.card-item .card-style  h4{
+.card-item .card-style h4{
     font-size: 24px;
     font-weight:600;
     color: #001931;
@@ -166,19 +179,22 @@ nav .menu a{
 /* the soloution section */
 
 .soloution-container{
-    width: 85%;
-    max-width: 1360px;
-    margin: 120px;
+    max-width: 1600px;   
+    margin: 0px auto;
     height: 800px;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    text-align: left;
     gap: 60px;
-    padding-right: 60px;
-    justify-content:space-between;
+    padding:120px;
+    justify-content:flex-start;
 
 }
-.soloution-container h4{
-    font-size: 16px;
+.soloution-container h3{
+    width: 500px;
+    font-size: 24px;
+    font-weight: 600;
     color:#469165 ;
     line-height: 20px;
     text-align: left;
@@ -189,16 +205,98 @@ nav .menu a{
     color: #001931;
     font-weight: bold;
     line-height: 54px;
+    padding: 36px 0 0 0;
     text-transform: capitalize;
 }
 .soloution-container p{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     color: #627382;
+    margin:16px 0;
+    gap: 40px;
     line-height: 20px;
 }
 
+.soloution-container .text-icon h4{
+    display: flex;
+    justify-content: left;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    padding: 10px 0px;
+    gap: 6px;
+    color: #001931;   
+}
 
+/* Thinks more section */
+.Think-container{
+    width: 1360px;
+    max-width: 1600px;
+    height: 500px;
+    margin:0 auto;
+    padding: 0px 120px 120px 120px ;
+    text-align: center;
+    align-items: center;
+    
+}
+.Think-container .box-section{
+    height: 380px;
+    padding: 80px 40px;
+    align-items: center;
+    align-content: center;
+    border-radius: 12px;
+    background-color: #F7F6F2;
+    
+}
+.Think-container .box-section h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #001931;
+}
+.Think-container .box-section p{
+    margin-top: 16px;
+    text-align: center;
+    font-size: 16px;
+    color:#627382;
+    line-height: 24px;
+    padding-bottom: 24px;
 
+}
 
+/* footer section */
+footer{
+    
+    margin-top: 40px;
+    background-color: #001931;
+    padding: 120px 0px 30px 0px;
+}
+footer .footer-section{
+    width: 85%;
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    
+}
+.footer-section .social{
+    max-width: 220px;
+}
+.footer-section h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight:500 ;
+    margin-bottom: 16px;
 
+}
+.footer-section .icons a {
+    margin:36px 16px;
+}
+.footer-container p{
+    color: #FAFAFA;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 30px;
+}
