@@ -1,19 +1,19 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
+/* whole body inter fonts */
 
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  
-}
 
+}
 
 #header{
     height:100px ;
+    align-content: center;
 }
 nav{
     max-width: 1600px;
@@ -44,9 +44,7 @@ nav .menu li a{
     
 }
 nav .menu li a:hover{
-    background-color: #469165;
-    
-    
+    background-color: #469165;   
 }
 nav .menu a {
     text-decoration: none;
@@ -58,8 +56,7 @@ nav .menu a {
     background-color: #469165;
     padding: 16px 12px;  
     border-radius: 4px;
-    border: none
-    ;
+    border: none;
     font-weight: 600;  
     cursor: pointer;
 }
@@ -86,8 +83,7 @@ nav .menu a {
     color: white;
 }
 
-
-/* hero Section */
+/* hero Section start here */
 
 .hero-container {
     margin: 0 auto;
@@ -114,7 +110,6 @@ nav .menu a {
     background-position: center;
     background-size:cover;
 }
-
 .hero-container p{
     font-size: 16px;
     color: #ffff;
@@ -122,8 +117,7 @@ nav .menu a {
     margin-bottom: 32px;
 }
 .main-section h1 {
-    width: 770px;
-    
+    width: 770px;   
     font-size: 72px;
     height: auto;
     width: fit-content;
@@ -131,27 +125,23 @@ nav .menu a {
     align-items: center;
     font-weight: 700px;
     margin:0 auto;
-    
-
     color:#ffff;
 }
 .main-section .highlighted-color-2{
     color: #469165;
 }
+/* hero section ends here */
 
-/* section-3 */
-
+/* Card Section stars */
 .section-heading{
     margin: 0 auto;
     height: 500px;
     max-width: 1600px;
     padding:120px ;
-    /* align-items: center; */
     align-content: center;
     text-align: center;
     
 }
-
 .section-heading h1{
     font-size: 48px;
     color: #001931;
@@ -167,8 +157,6 @@ nav .menu a {
     font-size: 16px;
     color:#001931;
     line-height: 20px;
-    
-
 }
 .section-heading .card-item{
     display: flex;
@@ -176,17 +164,16 @@ nav .menu a {
     
 }
 .card-item{
-    gap:24px;
-    padding: 24px;
-    justify-content: center;
-    
+    margin: 100px 0px;
+
 }
-.card-style{
+.card-item .card-style{
     width: 322px;
     height: 300px;;
     margin: 5px;
-    padding: 24px;
-    gap: 16px;
+    padding: 10px;
+    gap: 24px;
+    justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #ffff;
@@ -194,28 +181,41 @@ nav .menu a {
     box-shadow:0px 0px 8px 0px rgba(0, 0, 0, 0.06) ;
     border-bottom: 4px;
 }
-.card-style img{
+.card-style:hover{   
+    box-shadow: 0px 0px 10px 0px #00193160; 
+}
+.card-style .card-icon{
     width: 60px;
     height: 60px;
-    background-color: #F95555;
-    border-radius: 100px;
+    border-radius: 30px;
+    background-color:#F95555;
 }
-.card-item .card-style h4{
-    font-size: 24px;
+.card-style img{
+    width: 32px;
+    height: 32px;
+    padding: 15px;
+    color: #ffff;
+    
+}
+.card-item .card-style h5{
+    font-size: 20px;
     font-weight:600;
     color: #001931;
+    margin-top: 20px;
 }
 .card-item .card-style p{
     font-size: 16px;
     line-height: 26px;
     color:#627382;
 }
+/* Card Section Ends */
 
-/* the soloution section */
 
-.soloution-container{
+/* the solution section starts */
+
+.solution-container{
     max-width: 1600px;   
-    margin: 0px auto;
+    margin: 120px auto;
     height: 800px;
     display: flex;
     flex-direction: row;
@@ -223,27 +223,27 @@ nav .menu a {
     text-align: left;
     gap: 60px;
     padding:120px;
-    justify-content:flex-start;
+    justify-content:center;
 
 }
-.soloution-container h3{
+.solution-container h3{
     width: 500px;
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight:500;
     color:#469165 ;
     line-height: 20px;
     text-align: left;
     text-transform: uppercase;
 }
-.soloution-container h2{
+.solution-container h2{
     font-size: 48px;
     color: #001931;
     font-weight: bold;
     line-height: 54px;
-    padding: 36px 0 0 0;
+    padding: 16px 0 0 0;
     text-transform: capitalize;
 }
-.soloution-container p{
+.solution-container p{
     font-size: 16px;
     font-weight: 500;
     color: #627382;
@@ -252,7 +252,7 @@ nav .menu a {
     line-height: 20px;
 }
 
-.soloution-container .text-icon h4{
+.solution-container .text-icon h4{
     display: flex;
     justify-content: left;
     font-size: 16px;
@@ -263,7 +263,9 @@ nav .menu a {
     color: #001931;   
 }
 
-/* Thinks more section */
+/* the soloution section ends*/
+
+
 .Think-container{
     width: 1360px;
     max-width: 1600px;
@@ -295,10 +297,10 @@ nav .menu a {
     color:#627382;
     line-height: 24px;
     padding-bottom: 24px;
-
 }
+/* main section ends here */
 
-/* footer section */
+/* footer section start*/
 footer{
     
     margin-top: 40px;
@@ -311,8 +313,7 @@ footer .footer-section{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    gap: 16px;
-    
+    gap: 16px;   
 }
 .footer-section .social{
     max-width: 220px;
@@ -322,16 +323,30 @@ footer .footer-section{
     font-size: 20px;
     font-weight:500 ;
     margin-bottom: 16px;
-
 }
+
 .footer-section .icons a {
     margin:36px 16px;
 }
-.footer-container p{
+/* horizontal line css */
+footer .bottom-horizontal-line{
+    width: 1140px;
+    max-width: 1600px;
+   padding-top: 60px;
+    margin: 0px auto;
+    align-items: center;
+    align-content: center;
+    border-color: #6273829f;
+    border-width: 0px 0px 1px 0px;
+    
+}
+footer p{
     color: #FAFAFA;
-    font-weight: 400;
+    font-weight:300;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    padding-top: 30px;
+    padding-top:60px;  
 }
+
+/* footer section ends*/
